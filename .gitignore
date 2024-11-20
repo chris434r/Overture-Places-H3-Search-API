@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Virtual Environment
+venv/
+.env/  # If you're using a virtual environment with `.env` as the folder name
+
+# Poetry files
+poetry.lock  
+
+# Environment variables
+.env
+
+# Logs
+*.log
+logs/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Test coverage reports
+htmlcov/
+.coverage
+.tox/
+.cache/
+
+# Flask-related
+instance/
+*.db  # SQLite database files
