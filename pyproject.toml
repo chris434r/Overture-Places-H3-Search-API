@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "overture-places-h3-lookup-api"
+version = "0.1.0"
+description = ""
+authors = ["Chris Ryan <chris434r@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.13"
+flask = "^3.1.0"
+flask-smorest = "^0.45.0"
+h3 = "^4.1.2"
+psycopg2 = "^2.9.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
