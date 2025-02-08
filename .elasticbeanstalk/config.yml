@@ -3,7 +3,7 @@ branch-defaults:
     environment: flask-h3-env
     group_suffix: null
 global:
-  application_name: overture_places_h3_lookup_api
+  application_name: overture-places-h3-search-api
   branch: null
   default_ec2_keyname: aws-eb
   default_platform: Python 3.12 running on 64bit Amazon Linux 2023

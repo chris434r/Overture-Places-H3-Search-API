@@ -5,10 +5,13 @@ from collections import Counter, OrderedDict
 import h3  # H3 library for hex-based spatial indexing
 import psycopg2  # For connecting to a PostgreSQL database
 from flask import Flask, jsonify, make_response  # Flask application and JSON response handling
+from flask_cors import CORS
 from flask.views import MethodView  # For creating class-based views in Flask
 from flask_smorest import Api, Blueprint  # For API management and Swagger documentation with blueprints
 
 application = Flask(__name__)
+# Enable CORS for all routes
+CORS(application)
 
 # Configuration class for the API
 class APIConfig:
@@ -47,8 +50,6 @@ def get_db_connection():
         port=os.getenv("DB_PORT"),
         sslmode=os.getenv("SSL_MODE")
     )
-
-
 
 
 # Define the HexID class-based view to handle H3 hex ID generation requests
